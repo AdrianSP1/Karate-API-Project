@@ -1,0 +1,2089 @@
+18:17:25.141 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @PruebaStatus
+18:17:26.014 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: examples/users/statusShortener.feature - no viable alternative at input '\n  @PruebaStatus\n  Background:'
+18:39:57.879 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:40:00.887 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:4
+Given url urlShortnr
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+18:40:00.888 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:5
+And path 'shorten'
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+18:40:00.889 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:6
+* def body = {"url":"https://crowdar.com.ar"}
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+18:40:00.892 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:7
+* def key = {"x-rapidapi-key":"5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b"}
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+18:40:00.900 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:10
+And headers key
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+18:40:00.904 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:11
+And request body
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+18:40:00.908 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:12
+And method POST
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+classpath:examples/users/statusShortener.feature:12
+18:40:00.911 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:13
+And status 200
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+classpath:examples/users/statusShortener.feature:12
+classpath:examples/users/statusShortener.feature:13
+18:40:00.914 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:14
+Then match response.result_url =='#string'
+>> classpath:examples/users/statusShortener.feature:17
+>> karate-config.js failed
+>> js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+<<<<
+com.intuit.karate.KarateException: js failed:
+>>>>
+01: (function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: 'someValue'
+10:     urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+11:   }
+12:   if (env == 'dev') {
+13:     // customize
+14:     // e.g. config.foo = 'bar';
+15:   } else if (env == 'e2e') {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: 'https://url-shortener-service.p.rapidapi.com/'
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == 'dev') {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == 'e2e') {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+classpath:examples/users/statusShortener.feature:12
+classpath:examples/users/statusShortener.feature:13
+classpath:examples/users/statusShortener.feature:14
+18:40:02.822 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:42:10.068 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:42:10.084 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667770930082
+18:42:12.991 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:42:13.881 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+18:42:15.021 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1118
+1 < 200
+1 < Date: Sun, 06 Nov 2022 21:42:15 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+18:42:16.564 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:43:58.983 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:43:58.990 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771038989
+18:44:00.257 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:44:00.873 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+18:44:01.834 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 959
+1 < 200
+1 < Date: Sun, 06 Nov 2022 21:44:02 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+18:44:02.788 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:49:46.428 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:49:46.460 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771386459
+18:49:48.503 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:49:49.299 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+18:49:50.549 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1241
+1 < 400
+1 < Date: Sun, 06 Nov 2022 21:49:50 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+18:49:50.589 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:13
+Then match response.result_url ==read('classpath:examples/users/response/sinUrl')
+js failed:
+>>>>
+01: read('classpath:examples/users/response/sinUrl')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: examples/users/response/sinUrl
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:79)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/statusShortener.feature:13
+18:49:51.769 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:50:02.229 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:50:02.234 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771402233
+18:50:03.389 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:03.957 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+18:50:05.074 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1116
+1 < 400
+1 < Date: Sun, 06 Nov 2022 21:50:05 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+18:50:05.172 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:13
+Then match response.result_url ==read('classpath:examples/users/response/sinUrl.json')
+match failed: EQUALS
+  $ | actual path does not exist (STRING:MAP)
+  '#notpresent'
+  {"error":"API Error: URL is empty"}
+
+classpath:examples/users/statusShortener.feature:13
+18:50:06.028 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:50:38.442 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:50:38.449 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771438448
+18:50:39.579 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:40.120 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+18:50:40.980 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 858
+1 < 400
+1 < Date: Sun, 06 Nov 2022 21:50:41 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+18:50:41.839 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:51:38.914 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:51:38.980 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771498979
+18:51:41.638 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:51:41.638 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:51:42.789 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+18:51:42.789 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+18:51:43.940 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1061
+1 < 400
+1 < Date: Sun, 06 Nov 2022 21:51:44 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+18:51:44.080 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1290
+1 < 200
+1 < Date: Sun, 06 Nov 2022 21:51:44 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+18:51:45.457 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:53:27.255 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:53:27.261 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771607259
+18:53:28.496 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:53:28.496 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:53:29.087 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+18:53:29.087 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+18:53:30.258 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1169
+1 < 400
+1 < Date: Sun, 06 Nov 2022 21:53:30 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+18:53:30.319 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1232
+1 < 200
+1 < Date: Sun, 06 Nov 2022 21:53:30 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+18:53:31.305 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+18:55:11.218 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:55:11.225 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667771711224
+18:55:12.570 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:55:12.570 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:55:13.162 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+18:55:13.162 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+18:55:14.084 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 919
+1 < 200
+1 < Date: Sun, 06 Nov 2022 21:55:14 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+18:55:14.931 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1768
+1 < 400
+1 < Date: Sun, 06 Nov 2022 21:55:15 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+18:55:15.942 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+19:02:06.724 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:02:06.762 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667772126760
+19:02:09.056 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:02:09.056 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:02:09.056 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:02:10.261 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:02:10.261 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:02:10.261 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"sdfadfadsfdfsdf"}
+
+19:02:11.686 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1397
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:02:12 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+19:02:11.686 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1397
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:02:11 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+19:02:11.689 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1428
+1 < 200
+1 < Date: Sun, 06 Nov 2022 22:02:12 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+19:02:12.972 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+19:03:16.648 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:03:16.654 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667772196653
+19:03:17.953 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:17.953 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:17.953 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:18.504 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"sdfadfadsfdfsdf"}
+
+19:03:18.504 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:03:18.504 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:03:19.649 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1142
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:03:19 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+19:03:19.649 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1143
+1 < 200
+1 < Date: Sun, 06 Nov 2022 22:03:19 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+19:03:19.680 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1176
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:03:20 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+19:03:20.779 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+19:09:11.104 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:09:11.126 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667772551125
+19:09:12.994 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:09:12.994 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:09:12.994 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:09:12.994 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:09:13.280 [pool-1-thread-4] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:45
+And headers x-rapidapi-key = 'asdasdas'
+js failed:
+>>>>
+01: x-rapidapi-key = 'asdasdas'
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:10 Invalid left hand side for assignment
+x-rapidapi-key = 'asdasdas'
+          ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.evalAsMap(ScenarioEngine.java:342)
+
+classpath:examples/users/statusShortener.feature:45
+19:09:13.897 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"sdfadfadsfdfsdf"}
+
+19:09:13.897 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:09:13.897 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:09:15.441 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1529
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:09:15 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+19:09:15.441 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1531
+1 < 200
+1 < Date: Sun, 06 Nov 2022 22:09:15 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+19:09:18.683 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4786
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:09:19 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+19:09:21.353 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+19:10:00.055 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:10:00.061 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667772600060
+19:10:01.413 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:10:01.413 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:10:01.413 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:10:01.413 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:10:01.559 [pool-1-thread-4] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:45
+And headers x-rapidapi-key = 'asdasdas'
+js failed:
+>>>>
+01: x-rapidapi-key = 'asdasdas'
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:10 Invalid left hand side for assignment
+x-rapidapi-key = 'asdasdas'
+          ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.evalAsMap(ScenarioEngine.java:342)
+
+classpath:examples/users/statusShortener.feature:45
+19:10:01.968 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"sdfadfadsfdfsdf"}
+
+19:10:01.968 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:10:01.968 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:10:02.874 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 903
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:10:03 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+19:10:02.876 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 907
+1 < 200
+1 < Date: Sun, 06 Nov 2022 22:10:03 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+19:10:03.148 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1179
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:10:03 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+19:10:04.261 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+19:11:44.952 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:11:44.981 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667772704979
+19:11:47.306 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:11:47.306 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:11:47.306 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:11:47.306 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:11:48.440 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: asdasdas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:11:48.441 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"sdfadfadsfdfsdf"}
+
+19:11:48.441 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:11:48.441 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:11:50.028 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1578
+1 < 403
+1 < Date: Sun, 06 Nov 2022 22:11:50 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+1 < X-RapidAPI-Proxy-Response: true
+1 < Server: RapidAPI-1.2.8
+{"message":"You are not subscribed to this API."}
+
+19:11:50.032 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1590
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:11:50 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+19:11:50.034 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1590
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:11:50 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+19:11:50.035 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1592
+1 < 200
+1 < Date: Sun, 06 Nov 2022 22:11:50 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+19:11:50.050 [pool-1-thread-4] ERROR com.intuit.karate - classpath:examples/users/statusShortener.feature:49
+Then match response ==read('classpath:examples/users/response/invalidUrl.json')
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'error' (MAP:MAP)
+  {"message":"You are not subscribed to this API."}
+  {"error":"API Error: URL is invalid (check #1)"}
+
+
+classpath:examples/users/statusShortener.feature:49
+19:11:51.337 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature
+19:13:06.971 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:13:06.976 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1667772786975
+19:13:08.258 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:13:08.258 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:13:08.258 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:13:08.258 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:13:08.896 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"sdfadfadsfdfsdf"}
+
+19:13:08.896 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: asdasdas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:13:08.896 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+19:13:08.896 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: 5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:13:09.688 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 790
+1 < 403
+1 < Date: Sun, 06 Nov 2022 22:13:10 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+1 < X-RapidAPI-Proxy-Response: true
+1 < Server: RapidAPI-1.2.8
+{"message":"You are not subscribed to this API."}
+
+19:13:09.900 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1003
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:13:10 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+19:13:09.900 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1004
+1 < 400
+1 < Date: Sun, 06 Nov 2022 22:13:10 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+19:13:10.178 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1282
+1 < 200
+1 < Date: Sun, 06 Nov 2022 22:13:10 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/WrOX5G"}
+
+19:13:11.493 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/statusShortener.feature

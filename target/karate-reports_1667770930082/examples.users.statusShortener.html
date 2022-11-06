@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("201bc580-036f-4cca-861f-ff6972bd6733",{name:"adria"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>examples.users.statusShortener</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-06 06:40:00 p.m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:17]"><span>[1.1:17]</span> <span>Se valida que la respuesta del Status 200 es un string</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/statusShortener.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test RapidApi Shortener</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Prueba</a><a class="badge badge-primary" href="karate-tags.html">PruebaStatus</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:17]</span>
+                <span class="scenario-name">Se valida que la respuesta del Status 200 es un string</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url urlShortnr</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">18:40:00.888 classpath:examples/users/statusShortener.feature:4
+Given url urlShortnr
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &#39;shorten&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">18:40:00.889 classpath:examples/users/statusShortener.feature:5
+And path &#39;shorten&#39;
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def body = {&quot;url&quot;:&quot;https://crowdar.com.ar&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">18:40:00.892 classpath:examples/users/statusShortener.feature:6
+* def body = {&quot;url&quot;:&quot;https://crowdar.com.ar&quot;}
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def key = {&quot;x-rapidapi-key&quot;:&quot;5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">18:40:00.900 classpath:examples/users/statusShortener.feature:7
+* def key = {&quot;x-rapidapi-key&quot;:&quot;5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b&quot;}
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>headers key</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">18:40:00.904 classpath:examples/users/statusShortener.feature:10
+And headers key
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">18:40:00.908 classpath:examples/users/statusShortener.feature:11
+And request body
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">18:40:00.911 classpath:examples/users/statusShortener.feature:12
+And method POST
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+classpath:examples/users/statusShortener.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">18:40:00.914 classpath:examples/users/statusShortener.feature:13
+And status 200
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+classpath:examples/users/statusShortener.feature:12
+classpath:examples/users/statusShortener.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response.result_url ==&#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">18:40:00.917 classpath:examples/users/statusShortener.feature:14
+Then match response.result_url ==&#39;#string&#39;
+&gt;&gt; classpath:examples/users/statusShortener.feature:17
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;
+10:     urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+11:   }
+12:   if (env == &#39;dev&#39;) {
+13:     // customize
+14:     // e.g. config.foo = &#39;bar&#39;;
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:10:4 Expected comma but found ident
+    urlShortnr: &#39;https://url-shortener-service.p.rapidapi.com/&#39;
+    ^
+Unnamed:12:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:15:2 Expected eof but found }
+  } else if (env == &#39;e2e&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1346)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:313)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:398)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:430)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+classpath:examples/users/statusShortener.feature:4
+classpath:examples/users/statusShortener.feature:5
+classpath:examples/users/statusShortener.feature:6
+classpath:examples/users/statusShortener.feature:7
+classpath:examples/users/statusShortener.feature:10
+classpath:examples/users/statusShortener.feature:11
+classpath:examples/users/statusShortener.feature:12
+classpath:examples/users/statusShortener.feature:13
+classpath:examples/users/statusShortener.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

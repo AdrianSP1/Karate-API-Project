@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "6534db81-6926-4be4-bc69-f150fc570a5e",
+		"name": "Shorten mayo 2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Shorten",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 600ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(600);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-key",
+						"value": "5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "https://crowdar.com.ar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://url-shortener-service.p.rapidapi.com/shorten",
+					"protocol": "https",
+					"host": [
+						"url-shortener-service",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shorten Sin Body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-key",
+						"value": "5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://url-shortener-service.p.rapidapi.com/shorten",
+					"protocol": "https",
+					"host": [
+						"url-shortener-service",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shorten Invalid URL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 00\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Body matches string 'error'\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"error\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-key",
+						"value": "5bc1a34c40mshe27d32ebba28f93p1f3a18jsn222d7956a53b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "sdfadfadsfdfsdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://url-shortener-service.p.rapidapi.com/shorten",
+					"protocol": "https",
+					"host": [
+						"url-shortener-service",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shorten Invalid Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {\r",
+							"    pm.response.to.have.status(403);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string 'You are not subscribed to this API.'\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"You are not subscribed to this API.\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-key",
+						"value": "asdasdas",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "https://crowdar.com.ar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://url-shortener-service.p.rapidapi.com/shorten",
+					"protocol": "https",
+					"host": [
+						"url-shortener-service",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.environment.set(\"url\", \"url-shortener-service.p.rapidapi.com\");"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "url-shortener-service.p.rapidapi.com"
+		}
+	]
+}
